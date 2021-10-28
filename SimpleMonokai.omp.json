@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh3/main/themes/schema.json",
+  "final_space": true,
+  "blocks": [
+      {
+          "type": "prompt",
+          "alignment": "left",
+          "newline": true,
+          "segments": [
+              {
+                  "type": "root",
+                  "style": "plain",
+                  "powerline_symbol": "\uE0B0",
+                  "foreground": "red",
+                  "properties": {
+                      "prefix": "",
+                      "postfix": " ",
+                      "root_icon": "\uF0E7"
+                  }
+              },
+              {
+                  "type": "path",
+                  "style": "plain",
+                  "foreground": "#ae81ff",
+                  "properties": {
+                      "prefix": "",
+                      "postfix": "",
+                      "home_icon": "\uF7DB",
+                      "folder_icon": "\uE5FF",
+                      "folder_separator_icon": "/",
+                      "style": "agnoster"
+                  }
+              },
+              {
+                  "type": "git",
+                  "style": "plain",
+                  "foreground": "#a6e22e",
+                  "properties": {
+                      "display_status": true,
+                      "prefix": " \u276F ",
+                      "postfix": "",
+                      "ahead_color": "red",
+                      "behind_color": "green",
+                      "working_color": "red",
+                      "staging_color": "yellow",
+                      "local_changes_color": "yellow",
+                      "ahead_and_behind_color": "red",
+                      "color_background": false,
+                      "display_stash_count": true,
+                      "display_upstream_icon": true,
+                      "status_colors_enabled": true,
+                      "github_icon": " "
+                  }
+              },
+              {
+                    "type": "python",
+                    "style": "plain",
+                    "foreground": "#66d9ef",
+                    "properties": {
+                        "prefix": " \u276F \uE235 ",
+                        "display_version": false,
+                        "display_mode": "context"
+                    }
+              }
+          ]
+      },
+      {
+          "type": "prompt",
+          "alignment": "left",
+          "newline": true,
+          "segments": [
+              {
+                  "type": "time",
+                  "style": "plain",
+                  "foreground": "#f92672",
+                  "properties": {
+                      "prefix": "",
+                      "time_format": "15:04:05"
+                  }
+              },
+              {
+                  "type": "text",
+                  "style": "plain",
+                  "foreground": "#f92672",
+                  "properties": {
+                      "prefix": "",
+                      "postfix": "",
+                      "text": "\u276F"
+                  }
+              }
+          ]
+      }
+  ]
+}
