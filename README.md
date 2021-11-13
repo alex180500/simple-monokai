@@ -1,6 +1,6 @@
 # Simple Monokai
 
-![simple-monokai](https://user-images.githubusercontent.com/30732244/139464584-a3d814c6-c019-4e83-9203-77113facd759.png)
+![simple-monokai](https://github.com/alex180500/simple-monokai/blob/main/SimpleMonokai.png)
 
 Simple Monokai is a minimal theme for **[Oh My Posh](https://github.com/JanDeDobbeleer/oh-my-posh)** with *Python* integration.
 
