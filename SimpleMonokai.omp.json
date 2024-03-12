@@ -10,12 +10,8 @@
         {
           "type": "root",
           "style": "plain",
-          "powerline_symbol": "\ue0b0",
           "foreground": "red",
-          "template": "\uf0e7 ",
-          "properties": {
-            "root_icon": "\uf0e7"
-          }
+          "template": "\uf0e7 "
         },
         {
           "type": "path",
@@ -26,7 +22,8 @@
             "folder_icon": "\ue5ff",
             "folder_separator_icon": "/",
             "home_icon": "\udb80\udedc",
-            "style": "agnoster"
+            "style": "agnoster_short",
+            "max_depth": 2
           }
         },
         {
@@ -39,49 +36,39 @@
             "{{ if gt .Ahead 0 }}green{{ end }}",
             "{{ if gt .Behind 0 }}red{{ end }}"
           ],
-          "template": " \u276f {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 <red>{{ .Working.String }}</>{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 <yellow>{{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0}} \uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }}",
+          "template": " \u276f {{ .HEAD }}{{ if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} <red>\uf044 {{ .Working.String }}</>{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \udb80\udd93 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0 }} \uf1bb {{ .WorktreeCount }}{{ end }}",
           "properties": {
-            "fetch_stash_count": true,
             "fetch_status": true,
-            "fetch_upstream_icon": true,
-            "branch_icon": "\ue0a0"
+            "fetch_upstream_icon": true
           }
         },
         {
           "type": "python",
           "style": "plain",
           "foreground": "#66d9ef",
-          "template": " \u276f \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "template": " \u276f \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
           "properties": {
             "display_mode": "always",
-            "fetch_version": false,
-            "home_enabled": true
+            "fetch_version": false
           }
         }
-      ],
-      "newline": false
+      ]
     },
     {
       "type": "prompt",
       "alignment": "left",
+      "newline": true,
       "segments": [
         {
           "type": "time",
           "style": "plain",
           "foreground": "#f92672",
-          "template": "{{ .CurrentDate | date .Format }} ",
+          "template": "[{{ .CurrentDate | date .Format }}] \u276f",
           "properties": {
             "time_format": "15:04:05"
           }
-        },
-        {
-          "type": "text",
-          "style": "plain",
-          "foreground": "#f92672",
-          "template": "\u276f"
         }
-      ],
-      "newline": true
+      ]
     }
   ]
 }
