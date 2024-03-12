@@ -25,7 +25,7 @@
           "properties": {
             "folder_icon": "\ue5ff",
             "folder_separator_icon": "/",
-            "home_icon": "\uf7db",
+            "home_icon": "\udb80\udedc",
             "style": "agnoster"
           }
         },
@@ -44,7 +44,7 @@
             "fetch_stash_count": true,
             "fetch_status": true,
             "fetch_upstream_icon": true,
-            "branch_icon": "\uE0A0"
+            "branch_icon": "\ue0a0"
           }
         },
         {
@@ -53,8 +53,9 @@
           "foreground": "#66d9ef",
           "template": " \u276f \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
           "properties": {
-            "display_mode": "context",
-            "fetch_version": false
+            "display_mode": "always",
+            "fetch_version": false,
+            "home_enabled": true
           }
         }
       ],
