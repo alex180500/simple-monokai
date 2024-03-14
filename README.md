@@ -12,7 +12,7 @@ You can directly use Simple Monokai without downloading anything by pointing to 
 ```pwsh
 oh-my-posh init pwsh --config "https://raw.githubusercontent.com/alex180500/simple-monokai/main/SimpleMonokai.omp.json" | Invoke-Expression
 ```
-This way it will always be updated up to the latest version uploaded. Otherwise, you can just download it from the releases and drop it into your desired folder. Please, make sure to have a [Nerd Font](https://www.nerdfonts.com/font-downloads) **3.0.0 or above** installed. Personally, I use _CaskaydiaCove Nerd Font Mono_.
+This way it will always be updated up to the latest version uploaded. Otherwise, you can just [download it from the releases](https://github.com/alex180500/simple-monokai/releases/) and drop it into your desired folder. Please, make sure to have a [Nerd Font](https://www.nerdfonts.com/font-downloads) **3.0.0 or above** installed. Personally, I use _CaskaydiaCove Nerd Font Mono_.
 
 ## License
 
