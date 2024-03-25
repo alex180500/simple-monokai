@@ -17,7 +17,7 @@
           "type": "path",
           "style": "plain",
           "foreground": "#ae81ff",
-          "template": "{{ .Path }}",
+          "template": "{{.Path}}",
           "properties": {
             "folder_icon": "\ue5ff",
             "folder_separator_icon": "/",
@@ -31,12 +31,12 @@
           "style": "plain",
           "foreground": "#a6e22e",
           "foreground_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}yellow{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}red{{ end }}",
-            "{{ if gt .Ahead 0 }}green{{ end }}",
-            "{{ if gt .Behind 0 }}red{{ end }}"
+            "{{if or (.Working.Changed) (.Staging.Changed)}}yellow{{end}}",
+            "{{if and (gt .Ahead 0) (gt .Behind 0)}}red{{end}}",
+            "{{if gt .Ahead 0}}green{{end}}",
+            "{{if gt .Behind 0}}red{{end}}"
           ],
-          "template": " \u276f {{ .HEAD }}{{ if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} <red>\uf044 {{ .Working.String }}</>{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \udb80\udd93 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0 }} \uf1bb {{ .WorktreeCount }}{{ end }}",
+          "template": " \u276f {{.HEAD}}{{if .BranchStatus}} {{.BranchStatus}}{{end}}{{if .Working.Changed}} <red>\uf044 {{.Working.String}}</>{{end}}{{if and (.Staging.Changed) (.Working.Changed)}} |{{end}}{{if .Staging.Changed}} \uf046 {{.Staging.String}}{{end}}{{if gt .StashCount 0}} \udb80\udd93 {{.StashCount}}{{end}}{{if gt .WorktreeCount 0}} \uf1bb {{.WorktreeCount}}{{end}}",
           "properties": {
             "fetch_status": true,
             "fetch_upstream_icon": true
@@ -46,7 +46,7 @@
           "type": "python",
           "style": "plain",
           "foreground": "#66d9ef",
-          "template": " \u276f \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}",
+          "template": " \u276f \ue235 {{if .Error}}{{.Error}}{{else}}{{if .Venv}}{{.Venv}} {{end}}{{.Full}}{{end}}",
           "properties": {
             "display_mode": "always",
             "fetch_version": false
@@ -63,7 +63,7 @@
           "type": "time",
           "style": "plain",
           "foreground": "#f92672",
-          "template": "[{{ .CurrentDate | date .Format }}] \u276f",
+          "template": "[{{.CurrentDate | date .Format}}] \u276f",
           "properties": {
             "time_format": "15:04:05"
           }
