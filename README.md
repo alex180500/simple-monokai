@@ -2,7 +2,7 @@
 
 # Simple Monokai
 
-Simple Monokai is a minimal plain theme for **[Oh My Posh](https://ohmyposh.dev/)** with _Python_ and _Git_ integration. Simple Monokai is based upon the default theme **patriksvensson**.
+Simple Monokai is a minimal plain theme for **[Oh My Posh](https://ohmyposh.dev/)** with _Python_ and _Git_ integration. Simple Monokai is based upon the default theme [**patriksvensson**](https://ohmyposh.dev/docs/themes#patriksvensson).
 
 ## Installation
 
